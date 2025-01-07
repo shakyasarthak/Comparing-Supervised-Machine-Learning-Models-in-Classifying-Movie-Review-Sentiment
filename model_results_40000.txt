@@ -1,0 +1,153 @@
+Model Comparison Metrics:
+              Model  Accuracy  Precision  Recall  F1-Score
+                SVM    0.8904     0.8907  0.8904    0.8904
+Logistic Regression    0.8894     0.8899  0.8894    0.8893
+        Naive Bayes    0.8696     0.8702  0.8696    0.8696
+                ANN    0.8686     0.8687  0.8686    0.8686
+      Random Forest    0.8585     0.8587  0.8585    0.8585
+                KNN    0.7596     0.7648  0.7596    0.7584
+
+Best Model:
+SVM
+Best Model Metrics:
+Accuracy: 0.8904
+Precision: 0.8907
+Recall: 0.8904
+F1-Score: 0.8904
+
+
+Hyperparameters for All Models:
+
+SVM Hyperparameters:
+C: 1
+break_ties: False
+cache_size: 200
+class_weight: None
+coef0: 0.0
+decision_function_shape: ovr
+degree: 3
+gamma: scale
+kernel: lin644ear
+max_iter: -1
+probability: True
+random_state: None
+shrinking: True
+tol: 0.001
+verbose: False
+
+Random Forest Hyperparameters:
+bootstrap: True
+ccp_alpha: 0.0
+class_weight: None
+criterion: gini
+max_depth: None
+max_features: sqrt
+max_leaf_nodes: None
+max_samples: None
+min_impurity_decrease: 0.0
+min_samples_leaf: 1
+min_samples_split: 2
+min_weight_fraction_leaf: 0.0
+n_estimators: 200
+n_jobs: -1
+oob_score: False
+random_state: None
+verbose: 0
+warm_start: False
+
+ANN Hyperparameters:
+activation: relu
+alpha: 0.0001
+batch_size: auto
+beta_1: 0.9
+beta_2: 0.999
+early_stopping: False
+epsilon: 1e-08
+hidden_layer_sizes: (128, 64)
+learning_rate: adaptive
+learning_rate_init: 0.001
+max_fun: 15000
+max_iter: 1000
+momentum: 0.9
+n_iter_no_change: 10
+nesterovs_momentum: True
+power_t: 0.5
+random_state: None
+shuffle: True
+solver: adam
+tol: 0.0001
+validation_fraction: 0.1
+verbose: False
+warm_start: False
+
+Naive Bayes Hyperparameters:
+alpha: 1
+class_prior: None
+fit_prior: True
+force_alpha: warn
+
+KNN Hyperparameters:
+algorithm: auto
+leaf_size: 30
+metric: minkowski
+metric_params: None
+n_jobs: None
+n_neighbors: 7
+p: 2
+weights: uniform
+
+Logistic Regression Hyperparameters:
+C: 1
+class_weight: None
+dual: False
+fit_intercept: True
+intercept_scaling: 1
+l1_ratio: None
+max_iter: 1000
+multi_class: auto
+n_jobs: -1
+penalty: l2
+random_state: None
+solver: lbfgs
+tol: 0.0001
+verbose: 0
+warm_start: False
+
+
+Confusion Matrices:
+
+Confusion Matrix for SVM:
+True\Pred	0	1
+----------------------------------------
+0	3505	494
+1	383	3618
+
+Confusion Matrix for Random Forest:
+True\Pred	0	1
+----------------------------------------
+0	3390	609
+1	523	3478
+
+Confusion Matrix for ANN:
+True\Pred	0	1
+----------------------------------------
+0	3454	545
+1	506	3495
+
+Confusion Matrix for Naive Bayes:
+True\Pred	0	1
+----------------------------------------
+0	3401	598
+1	445	3556
+
+Confusion Matrix for KNN:
+True\Pred	0	1
+----------------------------------------
+0	2759	1240
+1	683	3318
+
+Confusion Matrix for Logistic Regression:
+True\Pred	0	1
+----------------------------------------
+0	3484	515
+1	370	3631
