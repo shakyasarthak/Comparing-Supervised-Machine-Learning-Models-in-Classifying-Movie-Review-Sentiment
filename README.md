@@ -71,7 +71,7 @@ jupyter notebook
 # Change this line in the notebook
 filepath = 'your_dataset.csv'  # Currently set to 'reduced_dataset.csv'
 ```
-4. Run all cells in the notebook
+3. Run all cells in the notebook
 
 ### Dataset Requirements
 - CSV format
