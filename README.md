@@ -66,8 +66,7 @@ jupyter notebook
 1. Prepare your dataset in CSV format with two columns:
    - 'Text': Your text data
    - 'Sentiment': Your sentiment labels
-2. Place your CSV file in the `data` directory
-3. Open the Jupyter Notebook and modify the filepath:
+2. Open the Jupyter Notebook and modify the filepath:
 ```python
 # Change this line in the notebook
 filepath = 'your_dataset.csv'  # Currently set to 'reduced_dataset.csv'
